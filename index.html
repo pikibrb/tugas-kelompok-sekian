@@ -1,0 +1,306 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AAV PROFILE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config" src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container dark:bg-surface-dim dark:text-on-surface"
+  >
+    <!-- Decorative Background Elements -->
+    <div
+      class="fixed top-20 -left-20 w-96 h-96 bg-primary-fixed-dim/30 organic-blob blur-3xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.05"
+    ></div>
+    <div
+      class="fixed bottom-20 -right-20 w-[30rem] h-[30rem] bg-secondary-fixed-dim/30 organic-blob blur-3xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.08"
+      style="animation-delay: -2s"
+    ></div>
+    <div
+      class="fixed top-1/2 left-1/4 w-64 h-64 bg-tertiary-fixed-dim/20 organic-blob blur-2xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.03"
+      style="animation-delay: -4s"
+    ></div>
+
+    <!-- Top Navigation -->
+    <nav
+      class="rounded-full mt-6 mx-auto w-[90%] max-w-7xl sticky top-6 bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-shadow duration-500 z-50"
+    >
+      <div class="flex justify-between items-center px-8 py-4 w-full">
+        <div
+          class="font-display-lg text-display-lg font-black text-primary tracking-tighter"
+        >
+          AAV
+        </div>
+        <!-- Desktop Nav Links -->
+        <!-- BUG FIX: this row (links + theme toggle) used to be wrapped in a
+             single `hidden md:flex` div. Below the `md` breakpoint that
+             hides the ENTIRE row with no mobile alternative, so the links
+             and the theme toggle just disappeared on phones. Fixed by
+             moving the theme toggle outside this div (always visible) and
+             adding a hamburger + slide-down menu for small screens. -->
+        <div
+          class="hidden md:flex items-center gap-6 font-label-md text-label-md"
+        >
+          <a
+            class="text-on-surface-variant font-medium hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer dark:text-surface"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-primary font-bold border-b-4 border-secondary rounded-sm hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer"
+            href="#"
+            >Profile</a
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <!-- Theme toggle: lives outside the "hidden md:flex" wrapper, so
+               it stays visible on mobile AND desktop. -->
+          <button
+            aria-label="Toggle dark mode"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 hover:scale-110 active:scale-95"
+            id="theme-toggle"
+          >
+            <span class="material-symbols-outlined">dark_mode</span>
+          </button>
+          <!-- Mobile hamburger toggle: only visible below the md breakpoint,
+               gives mobile users a way to reach the nav links. -->
+          <button
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 active:scale-95"
+            id="mobile-menu-toggle"
+          >
+            <span class="material-symbols-outlined" id="mobile-menu-icon"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Nav Menu: hidden by default, revealed by #mobile-menu-toggle.
+           Only relevant below the md breakpoint. -->
+      <div
+        class="hidden flex-col items-center gap-4 px-8 pb-6 font-label-md text-label-md md:hidden"
+        id="mobile-menu"
+      >
+        <a
+          class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer dark:text-surface"
+          href="#"
+          >Home</a
+        >
+        <a class="text-primary font-bold cursor-pointer" href="#">Profile</a>
+      </div>
+    </nav>
+
+    <!-- Fullscreen Hero Section -->
+    <section
+      class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden rounded-b-[4rem] shadow-2xl shadow-primary/10 mb-xl"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-surface/30 to-surface/80 dark:from-surface-dim/30 dark:to-surface-dim/80 backdrop-blur-[2px] -z-10"
+      ></div>
+      <div
+        class="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center gap-6"
+        data-parallax=""
+        data-speed="0.2"
+      >
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shadow-lg shadow-tertiary/20 floating"
+        >
+          <span
+            class="material-symbols-outlined"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >star</span
+          >
+          UNIVERSITAS PEMBANGUNAN PANCABUDI
+        </div>
+        <h1
+          class="font-display-lg text-display-lg md:text-[72px] md:leading-[80px] font-black text-on-surface dark:text-surface drop-shadow-xl"
+        >
+          Kelompok Ayu Apni Vicky <br />
+        </h1>
+        <p
+          class="font-body-md text-body-md md:text-xl text-on-surface-variant dark:text-surface-variant max-w-2xl mt-4"
+        >
+          Project Ujian Akhir Semester. Mata Kuliah Pemrograman WEB.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content Canvas -->
+    <main
+      class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pb-xl relative z-10"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Profile Card 1 -->
+        <div
+          class="profile-card blur-to-clear group relative bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex flex-col items-center text-center floating shadow-lg shadow-secondary/10 hover:shadow-xl hover:shadow-primary/20 hover:scale-105 hover:-rotate-1 transition-all duration-500 ease-out border-b-4 border-primary"
+        >
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden mb-6 relative shadow-lg shadow-primary-container/30 border-4 border-surface-container-lowest dark:border-inverse-surface z-10 group-hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Ayu."
+              src="img1.jpeg"
+            />
+          </div>
+          <h3
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface dark:text-surface mb-2 group-hover:text-primary transition-colors"
+          >
+            Ayu Indah Sari Siagian
+          </h3>
+          <p
+            class="font-label-md text-label-md text-secondary dark:text-secondary-fixed mb-4 uppercase tracking-wider"
+          >
+            2314370231
+          </p>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6 line-clamp-3"
+          >
+            ini section deskripsi singkat.
+          </p>
+          <div class="flex gap-2 mt-auto">
+            <span
+              class="px-3 py-1 rounded-full bg-surface-container dark:bg-on-surface-variant text-on-surface-variant dark:text-surface font-label-md text-xs"
+              >ini section hastag.</span
+            >
+          </div>
+          <button
+            class="absolute bottom-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-md shadow-lg shadow-secondary/30"
+          >
+            View Details
+          </button>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div
+          class="profile-card blur-to-clear group relative bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex flex-col items-center text-center floating-delayed-1 shadow-lg shadow-secondary/10 hover:shadow-xl hover:shadow-secondary/20 hover:scale-105 hover:rotate-2 transition-all duration-500 ease-out border-b-4 border-secondary lg:translate-y-12"
+        >
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden mb-6 relative shadow-lg shadow-secondary-container/30 border-4 border-surface-container-lowest dark:border-inverse-surface z-10 group-hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Apni."
+              src="img2.jpeg"
+            />
+          </div>
+          <h3
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface dark:text-surface mb-2 group-hover:text-secondary transition-colors"
+          >
+            Apni Namira Latifa
+          </h3>
+          <p
+            class="font-label-md text-label-md text-primary dark:text-primary-fixed mb-4 uppercase tracking-wider"
+          >
+            1914370508
+          </p>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6 line-clamp-3"
+          >
+            ini section deskripsi singkat.
+          </p>
+          <div class="flex gap-2 mt-auto">
+            <span
+              class="px-3 py-1 rounded-full bg-surface-container dark:bg-on-surface-variant text-on-surface-variant dark:text-surface font-label-md text-xs"
+              >ini section hastag.</span
+            >
+          </div>
+          <button
+            class="absolute bottom-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-primary text-on-primary px-6 py-2 rounded-full font-label-md shadow-lg shadow-primary/30"
+          >
+            View Details
+          </button>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div
+          class="profile-card blur-to-clear group relative bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex flex-col items-center text-center floating-delayed-2 shadow-lg shadow-secondary/10 hover:shadow-xl hover:shadow-tertiary/20 hover:scale-105 hover:-rotate-2 transition-all duration-500 ease-out border-b-4 border-tertiary-container"
+        >
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden mb-6 relative shadow-lg shadow-tertiary-container/30 border-4 border-surface-container-lowest dark:border-inverse-surface z-10 group-hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Lord Piki."
+              src="img3.jpeg"
+            />
+          </div>
+          <h3
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface dark:text-surface mb-2 group-hover:text-tertiary transition-colors"
+          >
+            Vicky Aldiano
+          </h3>
+          <p
+            class="font-label-md text-label-md text-tertiary dark:text-tertiary-fixed mb-4 uppercase tracking-wider"
+          >
+            2514370013
+          </p>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6 line-clamp-3"
+          >
+            ini section deskripsi singkat.
+          </p>
+          <div class="flex gap-2 mt-auto">
+            <span
+              class="px-3 py-1 rounded-full bg-surface-container dark:bg-on-surface-variant text-on-surface-variant dark:text-surface font-label-md text-xs"
+              >ini section hastag.</span
+            >
+          </div>
+          <button
+            class="absolute bottom-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-tertiary-container text-on-tertiary-container px-6 py-2 rounded-full font-label-md shadow-lg shadow-tertiary/30"
+          >
+            View Details
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="rounded-t-lg mt-xl border-t-4 border-tertiary-container bg-surface-container-lowest dark:bg-inverse-surface shadow-xl shadow-secondary/10 w-full relative z-20"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-md px-margin-desktop py-lg w-full max-w-7xl mx-auto"
+      >
+        <div
+          class="font-headline-lg text-headline-lg font-extrabold text-primary"
+        >
+          AAV
+        </div>
+        <div
+          class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md"
+        >
+          © 2026 AAV.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button
+      class="fixed bottom-8 right-8 w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-xl flex items-center justify-center opacity-0 translate-y-10 transition-all duration-500 z-50 hover:scale-110 hover:shadow-secondary/40 pointer-events-none"
+      id="backToTopBtn"
+    >
+      <span class="material-symbols-outlined font-bold text-2xl"
+        >arrow_upward</span
+      >
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.floating {
+    animation: floating 4s ease-in-out infinite;
+}
+
+.floating-delayed-1 {
+    animation: floating 5s ease-in-out infinite 1s;
+}
+
+.floating-delayed-2 {
+    animation: floating 4.5s ease-in-out infinite 2s;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.organic-blob {
+    animation: blob-morph 8s ease-in-out infinite alternate;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: transform 0.1s ease-out;
+    /* PERF FIX: promotes each blob to its own compositor layer so the
+       per-scroll transform update (set in script.js) is handled by the
+       GPU instead of triggering a repaint of the blurred layer on the
+       main thread — this is a big part of eliminating scroll jank. */
+    will-change: transform;
+}
+
+/* PERF FIX: same reasoning as .organic-blob above — the hero content
+   also gets its transform updated on every scroll frame, so give it its
+   own compositor layer too. */
+[data-parallax] {
+    will-change: transform;
+}
+
+@keyframes blob-morph {
+    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+.text-gradient-playful {
+    background: linear-gradient(135deg, #dd2269, #00daf3, #ffe170);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Blur to Clear Interaction */
+.blur-to-clear {
+    filter: blur(12px);
+    opacity: 0.7;
+    transition: filter 1s ease-out, opacity 1s ease-out, transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+.blur-to-clear.cleared {
+    filter: blur(0);
+    opacity: 1;
+}
