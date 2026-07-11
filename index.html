@@ -45,13 +45,7 @@
         >
           AAV
         </div>
-        <!-- Desktop Nav Links -->
-        <!-- BUG FIX: this row (links + theme toggle) used to be wrapped in a
-             single `hidden md:flex` div. Below the `md` breakpoint that
-             hides the ENTIRE row with no mobile alternative, so the links
-             and the theme toggle just disappeared on phones. Fixed by
-             moving the theme toggle outside this div (always visible) and
-             adding a hamburger + slide-down menu for small screens. -->
+
         <div
           class="hidden md:flex items-center gap-6 font-label-md text-label-md"
         >
@@ -67,8 +61,7 @@
           >
         </div>
         <div class="flex items-center gap-2">
-          <!-- Theme toggle: lives outside the "hidden md:flex" wrapper, so
-               it stays visible on mobile AND desktop. -->
+          
           <button
             aria-label="Toggle dark mode"
             class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 hover:scale-110 active:scale-95"
@@ -76,8 +69,7 @@
           >
             <span class="material-symbols-outlined">dark_mode</span>
           </button>
-          <!-- Mobile hamburger toggle: only visible below the md breakpoint,
-               gives mobile users a way to reach the nav links. -->
+          
           <button
             aria-controls="mobile-menu"
             aria-expanded="false"
@@ -91,8 +83,7 @@
           </button>
         </div>
       </div>
-      <!-- Mobile Nav Menu: hidden by default, revealed by #mobile-menu-toggle.
-           Only relevant below the md breakpoint. -->
+      
       <div
         class="hidden flex-col items-center gap-4 px-8 pb-6 font-label-md text-label-md md:hidden"
         id="mobile-menu"

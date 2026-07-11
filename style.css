@@ -24,16 +24,9 @@
     animation: blob-morph 8s ease-in-out infinite alternate;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: transform 0.1s ease-out;
-    /* PERF FIX: promotes each blob to its own compositor layer so the
-       per-scroll transform update (set in script.js) is handled by the
-       GPU instead of triggering a repaint of the blurred layer on the
-       main thread — this is a big part of eliminating scroll jank. */
     will-change: transform;
 }
 
-/* PERF FIX: same reasoning as .organic-blob above — the hero content
-   also gets its transform updated on every scroll frame, so give it its
-   own compositor layer too. */
 [data-parallax] {
     will-change: transform;
 }
