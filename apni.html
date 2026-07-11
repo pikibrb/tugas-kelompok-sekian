@@ -1,0 +1,280 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Apni Namira Latifa - AAV PROFILE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config" src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container dark:bg-surface-dim dark:text-on-surface"
+  >
+    <!-- Decorative Background Elements -->
+    <div
+      class="fixed top-20 -left-20 w-96 h-96 bg-primary-fixed-dim/30 organic-blob blur-3xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.05"
+    ></div>
+    <div
+      class="fixed bottom-20 -right-20 w-[30rem] h-[30rem] bg-secondary-fixed-dim/30 organic-blob blur-3xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.08"
+      style="animation-delay: -2s"
+    ></div>
+    <div
+      class="fixed top-1/2 left-1/4 w-64 h-64 bg-tertiary-fixed-dim/20 organic-blob blur-2xl -z-10 mix-blend-multiply dark:mix-blend-screen"
+      data-speed="0.03"
+      style="animation-delay: -4s"
+    ></div>
+
+    <!-- Top Navigation -->
+    <nav
+      class="rounded-full mt-6 mx-auto w-[90%] max-w-7xl sticky top-6 bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-shadow duration-500 z-50"
+    >
+      <div class="flex justify-between items-center px-8 py-4 w-full">
+        <a
+          class="font-display-lg text-display-lg font-black text-primary tracking-tighter"
+          href="index.html"
+        >
+          AAV
+        </a>
+        <!-- Desktop Nav Links -->
+        <div
+          class="hidden md:flex items-center gap-6 font-label-md text-label-md"
+        >
+          <a
+            class="text-on-surface-variant font-medium hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer dark:text-surface"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-primary font-bold border-b-4 border-secondary rounded-sm hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer"
+            href="index.html#profiles"
+            >Profile</a
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            aria-label="Toggle dark mode"
+            class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 hover:scale-110 active:scale-95"
+            id="theme-toggle"
+          >
+            <span class="material-symbols-outlined">dark_mode</span>
+          </button>
+          <button
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 active:scale-95"
+            id="mobile-menu-toggle"
+          >
+            <span class="material-symbols-outlined" id="mobile-menu-icon"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="hidden flex-col items-center gap-4 px-8 pb-6 font-label-md text-label-md md:hidden"
+        id="mobile-menu"
+      >
+        <a
+          class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer dark:text-surface"
+          href="index.html"
+          >Home</a
+        >
+        <a class="text-primary font-bold cursor-pointer" href="index.html#profiles"
+          >Profile</a
+        >
+      </div>
+    </nav>
+
+    <!-- Back link -->
+    <div class="max-w-5xl mx-auto px-margin-mobile md:px-margin-desktop mt-8 relative z-10">
+      <a
+        class="inline-flex items-center gap-2 text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300"
+        href="index.html"
+      >
+        <span class="material-symbols-outlined text-xl">arrow_back</span>
+        Kembali ke semua profile
+      </a>
+    </div>
+
+    <!-- Profile Header -->
+    <section class="max-w-5xl mx-auto px-margin-mobile md:px-margin-desktop mt-8 relative z-10">
+      <div
+        class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-lg shadow-primary/10 border-b-4 border-primary"
+      >
+        <div
+          class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden relative shadow-lg shadow-primary-container/30 border-4 border-surface-container-lowest dark:border-inverse-surface flex-shrink-0"
+        >
+          <img class="w-full h-full object-cover" data-alt="Apni." src="img2.jpeg" />
+        </div>
+        <div class="text-center md:text-left">
+          <p
+            class="font-label-md text-label-md text-secondary dark:text-secondary-fixed uppercase tracking-wider mb-2"
+          >
+            NPM: 1914370508
+          </p>
+          <h1
+            class="font-headline-lg text-headline-lg-mobile md:text-display-lg md:text-[40px] md:leading-[48px] font-black text-on-surface dark:text-surface mb-3"
+          >
+            Apni Namira Latifa
+          </h1>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant"
+          >
+          -
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Info Grid -->
+    <main class="max-w-5xl mx-auto px-margin-mobile md:px-margin-desktop pb-xl mt-8 relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Umur -->
+        <div
+          class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex items-center gap-4 shadow-lg shadow-secondary/10 border-b-4 border-secondary"
+        >
+          <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary dark:text-secondary-fixed flex-shrink-0">
+            <span class="material-symbols-outlined">cake</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Umur</p>
+            <!-- TODO: ganti dengan umur asli -->
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-/p>
+          </div>
+        </div>
+
+        <!-- Tempat/Tgl Lahir -->
+        <div
+          class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex items-center gap-4 shadow-lg shadow-secondary/10 border-b-4 border-secondary"
+        >
+          <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary dark:text-secondary-fixed flex-shrink-0">
+            <span class="material-symbols-outlined">location_on</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Tempat, Tanggal Lahir</p>
+            <!-- TODO: ganti dengan data asli -->
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
+          </div>
+        </div>
+
+        <!-- Hobi -->
+        <div
+          class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex items-center gap-4 shadow-lg shadow-tertiary/10 border-b-4 border-tertiary-container"
+        >
+          <div class="w-12 h-12 rounded-full bg-tertiary-container/40 flex items-center justify-center text-tertiary dark:text-tertiary-fixed flex-shrink-0">
+            <span class="material-symbols-outlined">interests</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Hobi</p>
+            <!-- TODO: ganti dengan hobi asli -->
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
+          </div>
+        </div>
+
+        <!-- No HP -->
+        <div
+          class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex items-center gap-4 shadow-lg shadow-primary/10 border-b-4 border-primary"
+        >
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined">call</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">No. HP</p>
+            <!-- TODO: ganti dengan nomor asli -->
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div
+          class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 flex items-center gap-4 shadow-lg shadow-primary/10 border-b-4 border-primary sm:col-span-2"
+        >
+          <div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined">mail</span>
+          </div>
+          <div>
+            <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Email</p>
+            <!-- TODO: ganti dengan email asli -->
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface break-all">-</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sosial Media -->
+      <div
+        class="profile-card blur-to-clear bg-surface-container-lowest dark:bg-inverse-surface rounded-xl p-6 md:p-8 mt-6 shadow-lg shadow-secondary/10 border-b-4 border-secondary"
+      >
+        <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider mb-4">Sosial Media</p>
+        <div class="flex flex-wrap gap-4">
+          <!-- Instagram -->
+          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
+            <span class="w-9 h-9 rounded-full bg-gradient-to-tr from-tertiary-fixed via-primary to-secondary flex items-center justify-center text-white flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+            </span>
+            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
+          </a>
+          <!-- TikTok -->
+          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
+            <span class="w-9 h-9 rounded-full bg-on-surface dark:bg-surface flex items-center justify-center text-surface dark:text-on-surface flex-shrink-0">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.6 5.82c-1.02-.9-1.6-2.2-1.6-3.62h-3.15v14.24a2.6 2.6 0 1 1-2.6-2.6c.15 0 .3.01.44.03V10.7a5.75 5.75 0 1 0 5.36 5.74V9.63a8.9 8.9 0 0 0 4.65 1.32V7.8a5.4 5.4 0 0 1-3.1-1.98z"></path></svg>
+            </span>
+            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
+          </a>
+          <!-- WhatsApp -->
+          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
+            <span class="w-9 h-9 rounded-full bg-[#25D366] flex items-center justify-center text-white flex-shrink-0">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.82L2 22l5.4-1.41a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.39 8.07 8.07 0 0 1 2.38 5.72c0 4.48-3.65 8.13-8.14 8.13a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.2.84.86-3.12-.19-.32a8.08 8.08 0 0 1-1.24-4.32c0-4.48 3.65-8.14 8.13-8.14m-4.4 4.28c-.16 0-.43.06-.65.31s-.85.83-.85 2.03.87 2.36 1 2.52c.12.16 1.7 2.66 4.18 3.62.58.25 1.04.4 1.4.51.58.19 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15s.2-1.05.14-1.15c-.06-.1-.22-.16-.47-.28s-1.43-.71-1.65-.79-.38-.12-.55.12-.63.79-.78.95-.29.19-.54.06a6.8 6.8 0 0 1-2-1.24 7.5 7.5 0 0 1-1.39-1.73c-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.24-.41.08-.16.04-.31-.02-.44s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47"></path></svg>
+            </span>
+            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
+          </a>
+        </div>
+      </div>
+
+      
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="rounded-t-lg mt-xl border-t-4 border-tertiary-container bg-surface-container-lowest dark:bg-inverse-surface shadow-xl shadow-secondary/10 w-full relative z-20"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-md px-margin-desktop py-lg w-full max-w-7xl mx-auto"
+      >
+        <div
+          class="font-headline-lg text-headline-lg font-extrabold text-primary"
+        >
+          AAV
+        </div>
+        <div
+          class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md"
+        >
+          © 2026 AAV.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button
+      class="fixed bottom-8 right-8 w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-xl flex items-center justify-center opacity-0 translate-y-10 transition-all duration-500 z-50 hover:scale-110 hover:shadow-secondary/40 pointer-events-none"
+      id="backToTopBtn"
+    >
+      <span class="material-symbols-outlined font-bold text-2xl"
+        >arrow_upward</span
+      >
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
