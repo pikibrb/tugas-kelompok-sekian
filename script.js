@@ -1,4 +1,3 @@
-
 document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
 });
@@ -7,14 +6,18 @@ document.addEventListener('contextmenu', (e) => {
 const themeToggleBtn = document.getElementById('theme-toggle');
 const htmlElement = document.documentElement;
 
+
 if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
         if (htmlElement.classList.contains('dark')) {
             htmlElement.classList.remove('dark');
             htmlElement.classList.add('light');
+            if (themeToggleIcon) themeToggleIcon.textContent = 'dark_mode';
         } else {
             htmlElement.classList.remove('light');
             htmlElement.classList.add('dark');
+            if (themeToggleIcon) themeToggleIcon.textContent = 'light_mode';
         }
     });
 }
@@ -64,7 +67,6 @@ if (backToTopBtn) {
     });
 }
 
-
 const profileCards = document.querySelectorAll('.profile-card');
 
 const revealCard = (card) => card.classList.add('cleared');
@@ -81,7 +83,6 @@ if ('IntersectionObserver' in window) {
 
     profileCards.forEach((card) => cardObserver.observe(card));
 } else {
-   
     profileCards.forEach((card) => revealCard(card));
 }
 

@@ -14,6 +14,12 @@
     animation: floating 4.5s ease-in-out infinite 2s;
 }
 
+.floating:hover,
+.floating-delayed-1:hover,
+.floating-delayed-2:hover {
+    animation-play-state: paused;
+}
+
 @keyframes floating {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -21,7 +27,6 @@
 }
 
 .organic-blob {
-    animation: blob-morph 8s ease-in-out infinite alternate;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: transform 0.1s ease-out;
     will-change: transform;
@@ -29,12 +34,6 @@
 
 [data-parallax] {
     will-change: transform;
-}
-
-@keyframes blob-morph {
-    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
 }
 
 .text-gradient-playful {
@@ -61,4 +60,26 @@
 .blur-to-clear.cleared {
     filter: blur(0);
     opacity: 1;
+}
+
+.btn-slide {
+    background-size: 201% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out, transform 0.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.btn-slide:hover {
+    background-position: left bottom;
+}
+
+.btn-slide-ayu {
+    background-image: linear-gradient(to right, #006875 50%, #b70052 50%);
+}
+
+.btn-slide-apni {
+    background-image: linear-gradient(to right, #b70052 50%, #006875 50%);
+}
+
+.btn-slide-vicky {
+    background-image: linear-gradient(to right, #c9a900 50%, #ffe170 50%);
 }

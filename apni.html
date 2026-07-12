@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Apni Namira Latifa - AAV PROFILE</title>
+    <title>Vicky Aldiano - AAV PROFILE</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Quicksand:wght@500;700&display=swap"
@@ -14,10 +14,10 @@
       rel="stylesheet"
     />
     <script id="tailwind-config" src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="bg-background text-on-background font-body-md min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container dark:bg-surface-dim dark:text-on-surface"
+    class="bg-background text-on-background font-body-md min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container dark:bg-inverse-surface dark:text-surface"
   >
     <!-- Decorative Background Elements -->
     <div
@@ -36,58 +36,58 @@
     ></div>
 
     <!-- Top Navigation -->
+    <!-- Top Navigation -->
     <nav
-      class="rounded-full mt-6 mx-auto w-[90%] max-w-7xl sticky top-6 bg-surface/70 dark:bg-surface-dim/70 backdrop-blur-xl shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-shadow duration-500 z-50"
+      class="mt-4 mx-auto w-[92%] max-w-6xl sticky top-4 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-sm border border-outline-variant/20 dark:border-surface-variant/10 rounded-2xl z-50"
     >
-      <div class="flex justify-between items-center px-8 py-4 w-full">
+      <div class="flex justify-between items-center px-6 py-3 w-full">
         <a
-          class="font-display-lg text-display-lg font-black text-primary tracking-tighter"
+          class="font-display-lg text-2xl font-black text-primary tracking-tighter"
           href="index.html"
         >
           AAV
         </a>
-        <!-- Desktop Nav Links -->
         <div
           class="hidden md:flex items-center gap-6 font-label-md text-label-md"
         >
           <a
-            class="text-on-surface-variant font-medium hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer dark:text-surface"
+            class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer"
             href="index.html"
             >Home</a
           >
           <a
-            class="text-primary font-bold border-b-4 border-secondary rounded-sm hover:scale-105 hover:text-primary transition-all duration-300 ease-out hover:-translate-y-1 active:scale-95 cursor-pointer"
+            class="text-primary font-bold cursor-pointer"
             href="index.html#profiles"
             >Profile</a
           >
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1">
           <button
             aria-label="Toggle dark mode"
-            class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 hover:scale-110 active:scale-95"
+            class="flex items-center justify-center w-9 h-9 rounded-full text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-white/10 transition-colors duration-200"
             id="theme-toggle"
           >
-            <span class="material-symbols-outlined">dark_mode</span>
+            <span class="material-symbols-outlined text-xl" id="theme-toggle-icon">dark_mode</span>
           </button>
           <button
             aria-controls="mobile-menu"
             aria-expanded="false"
             aria-label="Toggle navigation menu"
-            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-primary-container text-on-surface-variant hover:text-on-primary-container transition-all duration-300 active:scale-95"
+            class="md:hidden flex items-center justify-center w-9 h-9 rounded-full text-on-surface-variant dark:text-surface-variant hover:bg-surface-container dark:hover:bg-white/10 transition-colors duration-200"
             id="mobile-menu-toggle"
           >
-            <span class="material-symbols-outlined" id="mobile-menu-icon"
+            <span class="material-symbols-outlined text-xl" id="mobile-menu-icon"
               >menu</span
             >
           </button>
         </div>
       </div>
       <div
-        class="hidden flex-col items-center gap-4 px-8 pb-6 font-label-md text-label-md md:hidden"
+        class="hidden flex-col items-center gap-3 px-6 pb-4 font-label-md text-label-md md:hidden"
         id="mobile-menu"
       >
         <a
-          class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer dark:text-surface"
+          class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer"
           href="index.html"
           >Home</a
         >
@@ -116,14 +116,29 @@
         <div
           class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden relative shadow-lg shadow-primary-container/30 border-4 border-surface-container-lowest dark:border-inverse-surface flex-shrink-0"
         >
-          <img class="w-full h-full object-cover" data-alt="Apni." src="img2.jpeg" />
+          <img class="w-full h-full object-cover" data-alt="Lord Piki." src="img2.jpeg" />
         </div>
         <div class="text-center md:text-left">
-          <p
-            class="font-label-md text-label-md text-secondary dark:text-secondary-fixed uppercase tracking-wider mb-2"
-          >
-            NPM: 1914370508
-          </p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
+            <span
+              class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border-2 border-secondary bg-secondary-container/20 text-secondary dark:border-secondary-fixed dark:bg-secondary-fixed/10 dark:text-secondary-fixed font-label-md text-label-md uppercase tracking-wider"
+            >
+              <span class="material-symbols-outlined text-base">badge</span>
+              1914370508
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border-2 border-primary bg-primary-container/20 text-primary dark:border-primary-fixed dark:bg-primary-fixed/10 dark:text-primary-fixed font-label-md text-label-md uppercase tracking-wider"
+            >
+              <span class="material-symbols-outlined text-base">school</span>
+              Sistem Komputer
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border-2 border-tertiary-container bg-tertiary-container/20 text-tertiary dark:border-tertiary-fixed dark:bg-tertiary-fixed/10 dark:text-tertiary-fixed font-label-md text-label-md uppercase tracking-wider"
+            >
+              <span class="material-symbols-outlined text-base">groups</span>
+              REG-2 A
+            </span>
+          </div>
           <h1
             class="font-headline-lg text-headline-lg-mobile md:text-display-lg md:text-[40px] md:leading-[48px] font-black text-on-surface dark:text-surface mb-3"
           >
@@ -132,7 +147,8 @@
           <p
             class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant"
           >
-          -
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum perferendis ab, incidunt at illo accusamus facilis nostrum. Molestiae non tempora voluptates porro est fuga, tenetur quae vero sed eum. Illum, sed neque libero dolore quas odio iure corporis, possimus laboriosam deserunt aut enim, repellendus velit. Illum repudiandae quae cupiditate eius?
+
           </p>
         </div>
       </div>
@@ -151,7 +167,7 @@
           <div>
             <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Umur</p>
             <!-- TODO: ganti dengan umur asli -->
-            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-/p>
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
           </div>
         </div>
 
@@ -179,7 +195,7 @@
           <div>
             <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Hobi</p>
             <!-- TODO: ganti dengan hobi asli -->
-            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">Apa aja</p>
           </div>
         </div>
 
@@ -193,7 +209,7 @@
           <div>
             <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">No. HP</p>
             <!-- TODO: ganti dengan nomor asli -->
-            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">-</p>
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface">0819-9876-4321</p>
           </div>
         </div>
 
@@ -207,7 +223,7 @@
           <div>
             <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider">Email</p>
             <!-- TODO: ganti dengan email asli -->
-            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface break-all">-</p>
+            <p class="font-body-md text-body-md font-bold text-on-surface dark:text-surface break-all">apnimira7532@gmail.com</p>
           </div>
         </div>
       </div>
@@ -219,30 +235,22 @@
         <p class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant uppercase tracking-wider mb-4">Sosial Media</p>
         <div class="flex flex-wrap gap-4">
           <!-- Instagram -->
-          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
+          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="https://www.instagram.com/pipiskratos?igsh=djJucHR6OHp3bzQ5" target="_blank">
             <span class="w-9 h-9 rounded-full bg-gradient-to-tr from-tertiary-fixed via-primary to-secondary flex items-center justify-center text-white flex-shrink-0">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
             </span>
-            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
-          </a>
-          <!-- TikTok -->
-          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
-            <span class="w-9 h-9 rounded-full bg-on-surface dark:bg-surface flex items-center justify-center text-surface dark:text-on-surface flex-shrink-0">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.6 5.82c-1.02-.9-1.6-2.2-1.6-3.62h-3.15v14.24a2.6 2.6 0 1 1-2.6-2.6c.15 0 .3.01.44.03V10.7a5.75 5.75 0 1 0 5.36 5.74V9.63a8.9 8.9 0 0 0 4.65 1.32V7.8a5.4 5.4 0 0 1-3.1-1.98z"></path></svg>
-            </span>
-            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
+            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">@apniii_</span>
           </a>
           <!-- WhatsApp -->
-          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="#">
+          <a class="flex items-center gap-3 pl-2 pr-5 py-2 rounded-full bg-surface-container dark:bg-on-surface-variant hover:scale-105 transition-transform duration-300" href="https://wa.me/8985622397">
             <span class="w-9 h-9 rounded-full bg-[#25D366] flex items-center justify-center text-white flex-shrink-0">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.82L2 22l5.4-1.41a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.39 8.07 8.07 0 0 1 2.38 5.72c0 4.48-3.65 8.13-8.14 8.13a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.2.84.86-3.12-.19-.32a8.08 8.08 0 0 1-1.24-4.32c0-4.48 3.65-8.14 8.13-8.14m-4.4 4.28c-.16 0-.43.06-.65.31s-.85.83-.85 2.03.87 2.36 1 2.52c.12.16 1.7 2.66 4.18 3.62.58.25 1.04.4 1.4.51.58.19 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15s.2-1.05.14-1.15c-.06-.1-.22-.16-.47-.28s-1.43-.71-1.65-.79-.38-.12-.55.12-.63.79-.78.95-.29.19-.54.06a6.8 6.8 0 0 1-2-1.24 7.5 7.5 0 0 1-1.39-1.73c-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.24-.41.08-.16.04-.31-.02-.44s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47"></path></svg>
             </span>
-            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">-</span>
+            <span class="font-body-md text-body-md font-bold text-on-surface-variant dark:text-surface">0819-9876-4321</span>
           </a>
         </div>
       </div>
 
-      
     </main>
 
     <!-- Footer -->
@@ -260,7 +268,7 @@
         <div
           class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md"
         >
-          © 2026 AAV.
+          © 2026 UNPAB, AAV.
         </div>
       </div>
     </footer>
